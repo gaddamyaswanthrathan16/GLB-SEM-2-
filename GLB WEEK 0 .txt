@@ -1,0 +1,379 @@
+1.CHECK WHETHER A NUMBER IS PRIME OR NOT 
+
+
+import java.util.Scanner;
+public class PrimeCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if (n <= 1) {
+            System.out.println("Not Prime");
+            sc.close();
+            return;
+        }
+
+        boolean isPrime = true;
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            System.out.println("Prime");
+        } else {
+            System.out.println("Not Prime");
+        }
+        sc.close();
+    }
+}
+
+2. Factorial of a Number
+
+import java.util.Scanner;
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        long fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+
+        System.out.println(fact);
+        sc.close();
+    }
+}
+
+
+3. Reverse of a Number
+
+import java.util.Scanner;
+public class ReverseNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int rev = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+
+        System.out.println(rev);
+        sc.close();
+    }
+}
+
+4. Palindrome of a Number
+
+import java.util.Scanner;
+public class PalindromeNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int original = n;
+        int rev = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+
+        if (original == rev) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+        sc.close();
+    }
+}
+
+5. Generate a Fibonacci Series
+
+import java.util.Scanner;
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a);
+            if (i < n) {
+                System.out.print(" ");
+            }
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        System.out.println();
+        sc.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a);
+            if (i < n) {
+                System.out.print(" ");
+            }
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        System.out.println();
+        sc.close();
+    }
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a);
+            if (i < n) {
+                System.out.print(" ");
+            }
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        System.out.println();
+        sc.close();
+    }
+import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a);
+            if (i < n) {
+                System.out.print(" ");
+            }
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        System.out.println();
+        sc.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a);
+            if (i < n) {
+                System.out.print(" ");
+            }
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        System.out.println();
+        sc.close();
+    }
+}
+
+6. SUM OF ARRAY ELEMENTS
+
+import java.util.Scanner;
+public class ArraySum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+            sum += arr[i];
+        }
+
+        System.out.println(sum);
+        sc.close();
+    }
+}
+
+7. Reverse of Array Elements
+
+import java.util.Scanner;
+public class ReverseArray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.print(arr[i]);
+            if (i > 0) {
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+        sc.close();
+    }
+}
+
+8. Sum of All Digits of a Given Number
+
+import java.util.Scanner;
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int sum = 0;
+        while (n > 0) {
+            sum += n % 10;
+            n = n / 10;
+        }
+
+        System.out.println(sum);
+        sc.close();
+    }
+}
+
+9. Sum of Digits at Even Positions
+
+import java.util.Scanner;
+public class EvenPositionDigitSum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int pos = 1;
+        int sum = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            if (pos % 2 == 0) {
+                sum += digit;
+            }
+            n = n / 10;
+            pos++;
+        }
+
+        System.out.println(sum);
+        sc.close();
+    }
+}
+
+10. All Prime Numbers Between 1000 and 2000 (Inclusive)
+public class Primes1000To2000 {
+    public static void main(String[] args) {
+        for (int num = 1000; num <= 2000; num++) {
+            int factors = 0;
+
+            for (int i = 1; i <= num; i++) {
+                if (num % i == 0) {
+                    factors++;
+                }
+            }
+
+            if (factors == 2) {
+                System.out.print(num + " ");
+            }
+        }
+    }
+}
+
+11. Generate All Palindrome Numbers Less Than N
+
+import java.util.Scanner;
+public class PalindromesLessThanN {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        boolean first = true;
+        for (int i = 1; i < n; i++) {
+            int temp = i;
+            int rev = 0;
+            while (temp > 0) {
+                rev = rev * 10 + (temp % 10);
+                temp = temp / 10;
+            }
+
+            if (i == rev) {
+                if (!first) {
+                    System.out.print(" ");
+                }
+                System.out.print(i);
+                first = false;
+            }
+        }
+        System.out.println();
+        sc.close();
+    }
+}
+
+12. Sum of All Digits of a Given Number
+
+import java.util.Scanner;
+public class SumOfDigitsAgain {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int sum = 0;
+        while (n > 0) {
+            sum += n % 10;
+            n = n / 10;
+        }
+
+        System.out.println(sum);
+        sc.close();
+    }
+}
+
+
+13. Generate the Factorial of a Number
+
+import java.util.Scanner;
+public class FactorialAgain {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        long fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+
+        System.out.println(fact);
+        sc.close();
+    }
+}
+
+
